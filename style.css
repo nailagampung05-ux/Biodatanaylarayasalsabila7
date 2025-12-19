@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f1ed;
+    color: #7d6552;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1200px;
+    height: 900px;
+    background-color: #fdfaf7;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    padding: 60px;
+}
+
+.bg-shape {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.shape-1 {
+    width: 600px;
+    height: 600px;
+    background: #f4ece4;
+    top: -100px;
+    right: -100px;
+}
+
+.shape-2 {
+    width: 500px;
+    height: 500px;
+    background: #f4ece4;
+    bottom: -100px;
+    left: 50px;
+    opacity: 0.6;
+}
+
+.content {
+    display: flex;
+    z-index: 2;
+    width: 100%;
+}
+
+.kiri-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.profile-frame {
+    position: relative;
+    width: 230px;
+    height: 300px;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 125px 125px 0 0;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    border: 8px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gaya-nama {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #a67c52;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 0.9;
+}
+
+.kanan-section {
+    flex: 1.2;
+    padding-left: 40px;
+}
+
+.kontak {
+    text-align: right;
+    font-size: 0.85rem;
+    margin-bottom: 50px;
+}
+
+.section-judul {
+    background-color: #a67c52;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.data-table {
+    width: 100%;
+    font-size: 0.75rem;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+}
+
+.data-table td {
+    padding: 5px 0;
+    vertical-align: top;
+}
+
+.data-table td:first-child {
+    width: 150px;
+    font-weight: bold;
+}
+
+.sekolah-list {
+    list-style: none;
+    font-size: 0.75rem;
+}
+
+.sekolah-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-left: 2px solid #a67c52;
+    padding-left: 10px;
+}
+
+.sekolah {
+    font-weight: bold;
+    max-width: 70%;
+}
